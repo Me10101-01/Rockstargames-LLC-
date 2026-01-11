@@ -78,3 +78,9 @@ DerivedDataCache/*
 data/*
 logs/*
 build_info.json
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
