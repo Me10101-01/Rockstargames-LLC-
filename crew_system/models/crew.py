@@ -123,7 +123,9 @@ class Crew:
             errors.append("Leader must be a member of the crew")
         
         leader_count = len([m for m in self.members if m.rank == CrewRank.LEADER])
-        if leader_count > 1:
+        if leader_count == 0:
+            errors.append("Crew must have exactly one leader")
+        elif leader_count > 1:
             errors.append("Crew can only have one leader")
         
         return errors
