@@ -73,3 +73,14 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Crew Creation Pipeline Runtime Data
+data/*
+logs/*
+build_info.json
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
